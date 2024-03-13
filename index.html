@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/themes/hoppe.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <script src="js/script.js"></script>
+    
+    <title>Module 4 Course Project</title>
+</head>
+<body>
+    <div data-role="page" data-theme="a">
+        <div data-role="header" data-theme="a" class="header-container">
+            <div data-role="logo">
+                <img class="logo" src="images/logo.png" alt="Hoppe's Happy Fun Zone" width="150">
+            </div><!-- /logo -->
+            <h1><span>Hoppe's Happy Fun Zone</span></h1>
+            <a href="#" data-rel="back" class="ui-btn ui-btn-inline ui-btn-icon-right ui-icon-back ui-btn-right ui-btn-icon-notext ui-shadow ui-corner-all ui-btn-b" data-theme="a"></a>
+        </div><!-- /header -->
+
+        <div data-role="main" class="ui-content" data-theme="a">
+            <div data-role="content" data-theme="a">
+                <form class="ui-filterable">
+                    <input id="myFilter" data-type="search" placeholder="Type the name of the game...">
+                </form>
+
+                <br>
+                <div class="slide-content" style="max-width:500px">
+                    <img class="mySlides slide-animate-top" src="images/slideshow/farcry5-1.jpg" style="width:100%">
+                    <img class="mySlides slide-animate-bottom" src="images/slideshow/farcry5-2.jpg" style="width:100%">
+                    <img class="mySlides slide-animate-left" src="images/slideshow/skyrim-1.jpg" style="width:100%">
+                    <img class="mySlides slide-animate-right" src="images/slideshow/skyrim-2.jpg" style="width:100%">
+                    <img class="mySlides slide-animate-top" src="images/slideshow/rdr2-1.jpg" style="width:100%">
+                    <img class="mySlides slide-animate-bottom" src="images/slideshow/rdr2-2.jpg" style="width:100%">
+                </div>
+
+                <br>
+                <div data-role="navbar" class="button-group-center" data-theme="a">
+                    <button class="ui-btn ui-btn-b ui-corner-all ui-btn-inline" onclick="window.location.href='action.html'">Action</button>
+                    <button class="ui-btn ui-btn-b ui-corner-all ui-btn-inline" onclick="window.location.href='fantasy.html'">Fantasy</button>
+                    <button class="ui-btn ui-btn-b ui-corner-all ui-btn-inline" onclick="window.location.href='first_person.html'">First Person</button>
+                    <button class="ui-btn ui-btn-b ui-corner-all ui-btn-inline" onclick="window.location.href='role_playing.html'">Role Playing</button>
+                    <button class="ui-btn ui-btn-b ui-corner-all ui-btn-inline" onclick="window.location.href='science_fiction.html'">Science Fiction</button>
+                    <button class="ui-btn ui-btn-b ui-corner-all ui-btn-inline" onclick="window.location.href='time_wasters.html'">Time Wasters</button>
+                </div><!-- /navbar -->
+                <br>
+
+                <div id="gamesList" data-theme="a">
+                    <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-inset="true" data-input="#myFilter">
+                        <li><a href="amongus.html">Among Us<img src="images/amongusbox.jpg" alt="Among Us" width="50"></a></li>
+                        <li><a href="skyrim.html">Elder Scrolls: Skyrim<img src="images/skyrimbox.jpg" alt="Elder Scrolls: Skyrim" width="50"></a></li>
+                        <li><a href="fallout4.html">Fallout 4<img src="images/fallout4box.jpg" alt="Fallout 4" width="50"></a></li>
+                        <li><a href="farcry5.html">Far Cry 5<img src="images/farcry5box.jpg" alt="Far Cry 5" width="50"></a></li>
+                        <li><a href="farcry6.html">Far Cry 6<img src="images/farcry6box.jpg" alt="Far Cry 6" width="50"></a></li>
+                        <li><a href="newdawn.html">Far Cry New Dawn<img src="images/farcrynewdawnbox.jpg" alt="Far Cry New Dawn" width="50"></a></li>
+                        <li><a href="minecraft.html">Minecraft<img src="images/minecraftbox.jpg" alt="Minecraft" width="50"></a></li>
+                        <li><a href="pillars.html">Pillars of Eternity<img src="images/pillarsbox.jpg" alt="Pillars of Eternity" width="50"></a></li>
+                        <li><a href="pillars2.html">Pillars of Eternity II: Deadfire<img src="images/pillars2box.jpg" alt="Pillars of Eternity II: Deadfire" width="50"></a></li>
+                        <li><a href="rdr2.html">Red Dead Redemption 2<img src="images/rdr2box.jpg" alt="Red Dead Redemption 2" width="50"></a></li>
+                    </ul>
+                </div><!-- /gamesList -->
+
+                <div id="gamesListThumbnails" data-theme="a">
+                    <div class="ui-grid-b ui-responsive">
+                        <div class="ui-block-c"><a href="amongus.html" class="ui-btn ui-shadow ui-corner-all"><img src="images/amongusbox.jpg" alt="Among Us" width="100"></a></div>
+                        <div class="ui-block-b"><a href="skyrim.html" class="ui-btn ui-shadow ui-corner-all"><img src="images/skyrimbox.jpg" alt="Elder Scrolls V: Skyrim" width="100"></a></div>
+                        <div class="ui-block-a"><a href="fallout4.html" class="ui-btn ui-shadow ui-corner-all"><img src="images/fallout4box.jpg" alt="Fall Out 4" width="100"></a></div>
+                    </div>
+                    <div class="ui-grid-b ui-responsive">
+                        <div class="ui-block-a"><a href="farcry5.html" class="ui-btn ui-shadow ui-corner-all"><img src="images/farcry5box.jpg" alt="Far Cry 5" width="100"></a></div>
+                        <div class="ui-block-a"><a href="farcry6.html" class="ui-btn ui-shadow ui-corner-all"><img src="images/farcry6box.jpg" alt="Far Cry 6" width="100"></a></div>
+                        <div class="ui-block-b"><a href="newdawn.html" class="ui-btn ui-shadow ui-corner-all"><img src="images/farcrynewdawnbox.jpg" alt="Far Cry New Darn" width="100"></a></div>
+                        
+                    </div>
+                    <div class="ui-grid-b ui-responsive">
+                        <div class="ui-block-c"><a href="minecraft.html" class="ui-btn ui-shadow ui-corner-all"><img src="images/minecraftbox.jpg" alt="Minecraft" width="100"></a></div>
+                        <div class="ui-block-b"><a href="pillars.html" class="ui-btn ui-shadow ui-corner-all"><img src="images/pillarsbox.jpg" alt="Pillars of Eternity" width="100"></a></div>
+                        <div class="ui-block-a"><a href="pillars2.html" class="ui-btn ui-shadow ui-corner-all"><img src="images/pillars2box.jpg" alt="Pillars of Eternity 2 Deadfire" width="100"></a></div>
+                    </div>
+                    <div class="ui-grid-b ui-responsive">
+                        <div class="ui-block-c"><a href="rdr2.html" class="ui-btn ui-shadow ui-corner-all"><img src="images/rdr2box.jpg" alt="Red Dead Redemption 2" width="100"></a></div>
+                    </div>
+                </div><!-- /gamesListThumbnails -->
+
+                <div id="feedback">
+                    <ul data-role="listview">
+                        <li><a href="feedback.html" class="ui-btn ui-btn-inline ui-btn-icon-right ui-icon-mail ui-btn-right ui-shadow ui-corner-all" data-ajax="false">Send Feedback</a></li>
+                    </ul>
+                    <br>
+                </div>
+            </div><!-- /content -->
+
+        </div><!-- /main -->
+
+        <div data-role="footer" data-theme="a" data-position="fixed">
+            <h4>&copy; 2024 Mobile App Development by Robert Hoppe</h4>
+            <a href="#favoritesPanel" class="ui-btn ui-btn-inline ui-btn-icon-left ui-icon-bars ui-btn-left ui-shadow ui-corner-all ui-btn-b" data-rel="panel">Favorites List</a>
+        </div><!-- /footer -->
+        
+        <div data-role="panel" id="favoritesPanel" data-position="left" data-display="reveal">
+            <h2>Favorites</h2>
+            <form id="favoriteForm">
+                <label for="gameInput">Enter favorite game:</label>
+                <input type="text" id="gameInput" name="gameInput">
+                <input type="submit" value="Add">
+            </form>
+            <ul id="favoriteList"></ul>
+            <button id="clearFavorites">Clear favorites</button>
+        </div>
+
+    </div><!-- /page -->
+
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2500);    
+        }
+    </script>
+</body>
+</html>

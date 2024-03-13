@@ -1,0 +1,107 @@
+.button-group-center {
+    text-align: center;
+}
+
+.ui-filterable {
+    margin-bottom: 1em;
+}
+
+.ui-input-search {
+    margin: 0;
+    border-radius: 0;
+}
+
+.ui-grid-b {
+    display: flex;
+    align-items: center;
+    min-height: 15em;
+    justify-content: center;
+}
+
+#carousel .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.slide-content,.w3-auto{
+    margin-left:auto;
+    margin-right:auto
+}
+
+.slide-content{
+    max-width:980px
+
+}.slide-auto{
+    max-width:1140px
+}
+
+.slide-animate-top{
+    position:relative;
+    animation:animatetop 0.4s
+}
+
+@keyframes animatetop{
+    from{top:-300px;opacity:0} 
+    to{top:0;opacity:1}
+}
+
+.slide-animate-left{
+    position:relative;
+    animation:animateleft 0.4s
+}
+
+@keyframes animateleft{
+    from{left:-300px;opacity:0} 
+    to{left:0;opacity:1}
+}
+
+.slide-animate-right{
+    position:relative;
+    animation:animateright 0.4s
+}
+
+@keyframes animateright{
+    from{right:-300px;opacity:0} 
+    to{right:0;opacity:1}
+}
+
+.slide-animate-bottom{
+    position:relative;
+    animation:animatebottom 0.4s
+}
+
+@keyframes animatebottom{
+    from{bottom:-300px;opacity:0} 
+    to{bottom:0;opacity:1}
+}
+
+.logo{
+    margin-right: auto;
+}
+
+[data-role="header"]{
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
+#favoritesPanel.ui-panel {
+    z-index: 9999; /* Adjust the value as needed */
+}
+
+.wrap-text {
+    white-space: pre-wrap;
+    text-align: left;
+}
