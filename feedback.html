@@ -1,43 +1,52 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- External Stylesheets -->
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/themes/hoppe.min.css" />
     <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
 
+    <!-- External Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
     <script src="js/script.js"></script>
     
-    <title></title>
+    <title>Feedback</title>
 </head>
 <body>
+    <!-- Page Structure -->
     <div data-role="page" data-theme="a">
+        <!-- Header Section -->
         <div data-role="header" data-theme="a" class="header-container">
+            <!-- Logo -->
             <div data-role="logo">
                 <img class="logo" src="images/logo.png" alt="Hoppe's Happy Fun Zone" width="150">
             </div><!-- /logo -->
+            <!-- Header Title -->
             <h1><span>Hoppe's Happy Fun Zone</span></h1>
+            <!-- Back Button -->
             <a href="#" data-rel="back" class="ui-btn ui-btn-inline ui-btn-icon-right ui-icon-back ui-btn-right ui-btn-icon-notext ui-shadow ui-corner-all ui-btn-b" data-theme="b"></a>
         </div><!-- /header -->
 
-        <!-- Adding a feedback form that utilizes web storage so that if the user navigates away from the page and returns, the form is still there with their data. 
-        However, when they submit the form, the web storage is cleared. -->
+        <!-- Main Content Section -->
         <div data-role="main" class="ui-content" data-theme="a">
+            <!-- Adding a feedback form that utilizes web storage so that if the user navigates away from the page and returns, the form is still there with their data. 
+            However, when they submit the form, the web storage is cleared. -->
             <h2>Feedback Form</h2>
             <form id="feedbackForm">
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name" placeholder="Your Name">
-    
+
                 <label for="email">Email Address:</label>
                 <input type="email" name="email" id="email" placeholder="Your Email Address">
-    
+
                 <fieldset data-role="controlgroup" data-theme="a">
                     <legend>Contact Preference:</legend>
                     <label for="contactYes">Yes</label>
@@ -45,23 +54,24 @@
                     <label for="contactNo">No</label>
                     <input type="radio" name="contact" id="contactNo" value="No" checked>
                 </fieldset>
-    
+
                 <label for="rating">Website Rating (0-10):</label>
                 <input type="range" name="rating" id="rating" value="10" min="0" max="10">
-    
+
                 <label for="feedback">Feedback:</label>
                 <textarea name="feedback" id="feedback" placeholder="Enter your feedback"></textarea>
-    
+
                 <button type="submit" id="submitBtn">Submit</button>
             </form>
         </div><!-- /main -->
 
+        <!-- Footer Section -->
         <div data-role="footer" data-theme="a" data-position="fixed">
             <h4>&copy; 2024 Mobile App Development by Robert Hoppe</h4>
         </div><!-- /footer -->
-
     </div><!-- /page -->
 
+    <!-- JavaScript Section -->
     <script>
         $(document).on("pageinit", function() {
             // Check if browser supports web storage
@@ -86,8 +96,8 @@
                 localStorage.setItem("feedback", $("#feedback").val());
             });
     
-            // Handle form submission
-            $("#feedbackForm").on("submit", function(e) {
+             // Handle form submission
+             $("#feedbackForm").on("submit", function(e) {
                 e.preventDefault();
     
                 // Display alert with feedback data
@@ -104,7 +114,5 @@
             });
         });
     </script>
-    
-
 </body>
 </html>

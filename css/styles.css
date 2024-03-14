@@ -1,16 +1,24 @@
+/*
+    This CSS file is used for styling the pages of the Hoppe's Happy Fun Zone mobile app.
+*/
+
+/* Align button groups to the center */
 .button-group-center {
     text-align: center;
 }
 
+/* Adjust margin for filterable elements */
 .ui-filterable {
     margin-bottom: 1em;
 }
 
+/* Customize search input */
 .ui-input-search {
     margin: 0;
     border-radius: 0;
 }
 
+/* Flex layout for grid elements */
 .ui-grid-b {
     display: flex;
     align-items: center;
@@ -18,73 +26,109 @@
     justify-content: center;
 }
 
+/* Ensure images inside carousel fill their containers */
 #carousel .item img{
     display: block;
     width: 100%;
     height: auto;
 }
 
-.slide-content,.w3-auto{
+/* Center block elements horizontally */
+.slide-content, .w3-auto {
     margin-left:auto;
-    margin-right:auto
+    margin-right:auto;
 }
 
-.slide-content{
-    max-width:980px
-
-}.slide-auto{
-    max-width:1140px
+/* Limit maximum width for content */
+.slide-content {
+    max-width: 980px;
 }
 
-.slide-animate-top{
-    position:relative;
-    animation:animatetop 0.4s
+/* Limit maximum width for content on larger screens */
+.slide-auto {
+    max-width: 1140px;
 }
 
-@keyframes animatetop{
-    from{top:-300px;opacity:0} 
-    to{top:0;opacity:1}
+/* Slide in animation from top */
+.slide-animate-top {
+    position: relative;
+    animation: animatetop 0.4s;
 }
 
-.slide-animate-left{
-    position:relative;
-    animation:animateleft 0.4s
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 0;
+        opacity: 1;
+    }
 }
 
-@keyframes animateleft{
-    from{left:-300px;opacity:0} 
-    to{left:0;opacity:1}
+/* Slide in animation from left */
+.slide-animate-left {
+    position: relative;
+    animation: animateleft 0.4s;
 }
 
-.slide-animate-right{
-    position:relative;
-    animation:animateright 0.4s
+@keyframes animateleft {
+    from {
+        left: -300px;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        opacity: 1;
+    }
 }
 
-@keyframes animateright{
-    from{right:-300px;opacity:0} 
-    to{right:0;opacity:1}
+/* Slide in animation from right */
+.slide-animate-right {
+    position: relative;
+    animation: animateright 0.4s;
 }
 
-.slide-animate-bottom{
-    position:relative;
-    animation:animatebottom 0.4s
+@keyframes animateright {
+    from {
+        right: -300px;
+        opacity: 0;
+    }
+    to {
+        right: 0;
+        opacity: 1;
+    }
 }
 
-@keyframes animatebottom{
-    from{bottom:-300px;opacity:0} 
-    to{bottom:0;opacity:1}
+/* Slide in animation from bottom */
+.slide-animate-bottom {
+    position: relative;
+    animation: animatebottom 0.4s;
 }
 
-.logo{
+@keyframes animatebottom {
+    from {
+        bottom: -300px;
+        opacity: 0;
+    }
+    to {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+/* Adjust margin for logo */
+.logo {
     margin-right: auto;
 }
 
-[data-role="header"]{
+/* Ensure header elements are aligned vertically */
+[data-role="header"] {
     display: flex;
     align-items: center;
 }
 
+/* Responsive layout adjustments for smaller screens */
 @media only screen and (max-width: 600px) {
     .header-container {
         flex-direction: column;
@@ -97,10 +141,12 @@
     }
 }
 
+/* Adjust z-index for panel */
 #favoritesPanel.ui-panel {
     z-index: 9999; /* Adjust the value as needed */
 }
 
+/* Allow text to wrap within elements */
 .wrap-text {
     white-space: pre-wrap;
     text-align: left;

@@ -3,36 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
+    <!-- External CSS files -->
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/themes/hoppe.css" />
 
+    <!-- External JavaScript libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
     <script src="js/script.js"></script>
-    
+    <!-- Title of the webpage -->
     <title>Module 6 Course Project</title>
 </head>
 <body>
+    <!-- Page container -->
     <div data-role="page" data-theme="a">
+        <!-- Header section -->
         <div data-role="header" data-theme="a" class="header-container">
             <div data-role="logo">
+                <!-- Logo image -->
                 <img class="logo" src="images/logo.png" alt="Hoppe's Happy Fun Zone" width="150">
-            </div><!-- /logo -->
+            </div>
             <h1><span>Hoppe's Happy Fun Zone</span></h1>
+            <!-- Back button which goes back to the previous page -->
             <a href="#" data-rel="back" class="ui-btn ui-btn-inline ui-btn-icon-right ui-icon-back ui-btn-right ui-btn-icon-notext ui-shadow ui-corner-all ui-btn-b" data-theme="a"></a>
         </div><!-- /header -->
 
+        <!-- Main content section -->
         <div data-role="main" class="ui-content" data-theme="a">
             <div data-role="content" data-theme="a">
+                <!-- Search/filter form allows for filtering content by game name -->
                 <form class="ui-filterable">
                     <input id="myFilter" data-type="search" placeholder="Type the name of the game...">
                 </form>
 
                 <br>
+                <!-- Slideshow section which displays an animated slideshow. You can add as many images as desired. -->
                 <div class="slide-content" style="max-width:500px">
                     <img class="mySlides slide-animate-top" src="images/slideshow/farcry5-1.jpg" style="width:100%">
                     <img class="mySlides slide-animate-bottom" src="images/slideshow/farcry5-2.jpg" style="width:100%">
@@ -43,6 +52,7 @@
                 </div>
 
                 <br>
+                <!-- Navigation bar where each button goes to a "game topic" page and lists those types of games -->
                 <div data-role="navbar" class="button-group-center" data-theme="a">
                     <button class="ui-btn ui-btn-b ui-corner-all ui-btn-inline" onclick="window.location.href='action.html'">Action</button>
                     <button class="ui-btn ui-btn-b ui-corner-all ui-btn-inline" onclick="window.location.href='fantasy.html'">Fantasy</button>
@@ -53,6 +63,7 @@
                 </div><!-- /navbar -->
                 <br>
 
+                <!-- Games list section  - this works in conjunction with the search/filter form above -->
                 <div id="gamesList" data-theme="a">
                     <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-inset="true" data-input="#myFilter">
                         <li><a href="amongus.html">Among Us<img src="images/amongusbox.jpg" alt="Among Us" width="50"></a></li>
@@ -68,6 +79,7 @@
                     </ul>
                 </div><!-- /gamesList -->
 
+                 <!-- Games list with thumbnails section in which each button links to a specific game's page -->
                 <div id="gamesListThumbnails" data-theme="a">
                     <div class="ui-grid-b ui-responsive">
                         <div class="ui-block-c"><a href="amongus.html" class="ui-btn ui-shadow ui-corner-all"><img src="images/amongusbox.jpg" alt="Among Us" width="100"></a></div>
@@ -92,6 +104,7 @@
 
                 <div id="feedback">
                     <ul data-role="listview">
+                        <!-- Feedback section - button links to the feedback form -->
                         <li><a href="feedback.html" class="ui-btn ui-btn-inline ui-btn-icon-right ui-icon-mail ui-btn-right ui-shadow ui-corner-all" data-ajax="false">Send Feedback</a></li>
                     </ul>
                     <br>
@@ -100,11 +113,13 @@
 
         </div><!-- /main -->
 
+        <!-- Footer section -->
         <div data-role="footer" data-theme="a" data-position="fixed">
             <h4>&copy; 2024 Mobile App Development by Robert Hoppe</h4>
             <a href="#favoritesPanel" class="ui-btn ui-btn-inline ui-btn-icon-left ui-icon-bars ui-btn-left ui-shadow ui-corner-all ui-btn-b" data-rel="panel">Favorites List</a>
         </div><!-- /footer -->
         
+        <!-- Panel with Form to add favorite game and utilizes web storage to keep the game list for the user -->
         <div data-role="panel" id="favoritesPanel" data-position="left" data-display="reveal">
             <h2>Favorites</h2>
             <form id="favoriteForm">
@@ -118,6 +133,7 @@
 
     </div><!-- /page -->
 
+    <!-- JavaScript to add slideshow functionality -->
     <script>
         var myIndex = 0;
         carousel();

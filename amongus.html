@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- External Stylesheets -->
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="css/styles.css">
 
+    <!-- External Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
@@ -16,34 +18,43 @@
     <title>Among Us</title>
 </head>
 <body>
+    <!-- Page Structure -->
     <div data-role="page">
+        <!-- Header Section -->
         <div data-role="header" data-theme="c" class="header-container">
+            <!-- Logo -->
             <div data-role="logo">
                 <img class="logo" src="images/logo.png" alt="Hoppe's Happy Fun Zone" width="150">
             </div><!-- /logo -->
+            <!-- Header Title -->
             <h1><span>Hoppe's Happy Fun Zone</span></h1>
+            <!-- Back Button -->
             <a href="#" data-rel="back" class="ui-btn ui-btn-inline ui-btn-icon-right ui-icon-back ui-btn-right ui-btn-icon-notext ui-shadow ui-corner-all ui-btn-b" data-theme="c"></a>
         </div><!-- /header -->
 
+        <!-- Main Content Section -->
         <div role="main" class="ui-content">
             <div class="ui-grid-a">
-                    <div class="ui-block-a">
-                        <a class="ui-shadow ui-btn ui-corner-all">
-                            <img class="game-image" src="images/details/amongus.jpg" alt="Among Us" width="400">
-                        </a>
-                    </div>
-                    <div class="ui-block-b">
-                        <a class="ui-shadow ui-btn ui-corner-all">
-                            <h1>Among Us</h1>
-                            <br>
-                            <p class="wrap-text">Among Us is a multiplayer game where players on a spaceship complete tasks, but some are impostors sabotaging the mission. Developed by InnerSloth, it's known for its social deduction gameplay, requiring teamwork to identify impostors. Its simplicity and suspenseful gameplay have made it a cultural phenomenon in online gaming.</p>
-                        </a>
-                    </div>
+                <!-- Game Image -->
+                <div class="ui-block-a">
+                    <a class="ui-shadow ui-btn ui-corner-all">
+                        <img class="game-image" src="images/details/amongus.jpg" alt="Among Us" width="400">
+                    </a>
                 </div>
-                <div class="ui-grid-solo">
-                    <div class="ui-block-a">
-                        <a class="ui-shadow ui-btn ui-corner-all">
-                            <p class="wrap-text">Among Us, developed by InnerSloth, has taken the gaming world by storm with its unique blend of social deduction and multiplayer gameplay. Set aboard a spaceship, this indie sensation pits players against each other in a battle of wits and deception.
+                <!-- Game Details -->
+                <div class="ui-block-b">
+                    <a class="ui-shadow ui-btn ui-corner-all">
+                        <h1>Among Us</h1>
+                        <br>
+                        <p class="wrap-text">Among Us is a multiplayer game where players on a spaceship complete tasks, but some are impostors sabotaging the mission. Developed by InnerSloth, it's known for its social deduction gameplay, requiring teamwork to identify impostors. Its simplicity and suspenseful gameplay have made it a cultural phenomenon in online gaming.</p>
+                    </a>
+                </div>
+            </div>
+            <div class="ui-grid-solo">
+                <!-- Game Description -->
+                <div class="ui-block-a">
+                    <a class="ui-shadow ui-btn ui-corner-all">
+                        <p class="wrap-text">Among Us, developed by InnerSloth, has taken the gaming world by storm with its unique blend of social deduction and multiplayer gameplay. Set aboard a spaceship, this indie sensation pits players against each other in a battle of wits and deception.
 
 At its core, Among Us is a game of teamwork and betrayal. Players are divided into two roles: Crewmates and Impostors. Crewmates must complete various tasks around the spaceship to ensure its smooth operation, while Impostors sabotage these tasks and eliminate Crewmates without being detected.
 
@@ -58,11 +69,12 @@ Among Us has also become a cultural phenomenon, spawning countless memes, fan ar
 However, Among Us is not without its flaws. Some players may find the repetitive nature of tasks to be tedious, while others may encounter issues with connectivity and server stability. Additionally, the game's reliance on player interaction means that it is best enjoyed with a group of friends or fellow enthusiasts.
 
 Overall, Among Us is a testament to the power of indie game development. Its addictive gameplay, coupled with its emphasis on social interaction, has solidified its place as one of the most beloved multiplayer experiences in recent memory. Whether you're a seasoned gamer or new to the genre, Among Us offers something for everyone, making it a must-play title in today's gaming landscape.</p>
-                        </a>
-                    </div>
+                    </a>
                 </div>
+            </div>
         </div><!-- /content -->
 
+        <!-- Footer Section -->
         <div data-role="footer" data-theme="c" data-position="fixed">
             <h4>&copy; 2024 Mobile App Development by Robert Hoppe</h4>
         </div><!-- /footer -->
